@@ -1,0 +1,20 @@
+-php = code ingniter(basico), drupal(medio), poo(avanzado), chartdirector(avanzado), phpbb(basico)
+-java sockets = fileinputstream, fileoutstreams, bufferedreader, inputreader, input, output, server, socket, urlconnection, httpUrlConnection
+-java siwng = siwngx(intermedio), swing(intermedio), adapters, jfreecharts
+-java web = jsp(intermedio), struts, servlets(intermedio), customs tags
+-java orm = hibernate(intermedio)
+-nodejs(basico) = fade, express, npm
+-groovy (intermedio)
+-javascript(intermedio) = jquery, underscore, currentthreads, socket.io(basico)
+-java jms(avanzado) = objectmessage, streammessage, bytemessage, topic, queue
+-css = bootstrap(basico), kickstart
+-html = html4, html5(basico), canvas(basico)
+-java = reflection(intermedio), ejbs(intermedio), connection pooling(avanzado), beans(avanzado), cdi(basico), 
+-flash = actionscript2(avanzado)
+
+ides = netbeans(avanzado), eclipse (medio), zend studio (basico)
+
+
+judson, uml, git, subversion
+
+congresos conferencias: guadalajaracon 1 y 2, flisol
