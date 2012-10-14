@@ -1,0 +1,5 @@
+BeanInfo testBeanInfo = Introspector.getBeanInfo(Record.class);
+                
+                for (PropertyDescriptor propertyDescriptor : testBeanInfo.getPropertyDescriptors()) {
+                    System.out.println("Property: " + propertyDescriptor.getName() + " value " + propertyDescriptor.getValue(propertyDescriptor.getName()) );                    
+                }
