@@ -1,0 +1,30 @@
+Bandwidth
+ Bandwidth Over Time Bits
+ Bandwidth Over Time Bytes
+ Bandwidth Over Time Source Bits
+ Bandwidth Over Time Destination Bits
+ Bandwidth Over Time Source and Destination Bits
+ Bandwidth Over Time Bits Live
+
+Protocols
+ Network Protocols
+ IP Protocols
+ TCP Protocols
+ UDP Protocols
+
+Host
+ IP Talkers Bytes
+ IP Destinations Bytes
+ IP Sources Bytes
+
+Conversations
+ Host Conversations Bytes
+ Host TCP Conversations Bytes
+ Host UDP Conversations Bytes
+
+Web
+ Websites
+ Web Server Hosts
+
+QoS
+ Type of Service
