@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--
+    Document   : hibernate.cfg.xml
+    Created on : November 1, 2011, 10:48 AM
+    Author     : skuarch
+    Description:
+        Purpose of the document follows.
+-->
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!--
+        <property name="connection.driver.class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.208.15/ssn_demo</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">vitalnoc</property>
+        <property name="connection.pool_size">8</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="show_sql">true</property>
+        -->
+        
+        <!--
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.jdbc.batch_size">0</property>
+        -->
+
+        <!-- using glassfish pool -->
+        <property name="show_sql">false</property>        
+        <property name="hibernate.connection.datasource">jdbc/ssn_4</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!--<property name="hbm2ddl.auto">create-drop</property>-->
+        <property name="hbm2ddl.auto">validate</property>
+
+        <mapping class="model.beans.Configuration"/>
+        <mapping class="model.beans.Users"/>        
+        <mapping class="model.beans.Collectors"/>
+        <mapping class="model.beans.Categories"/>
+        <mapping class="model.beans.Subcategories"/>
+        <!--<mapping resource="categories.hbm.xml"/>-->
+
+    </session-factory>
+
+</hibernate-configuration>
