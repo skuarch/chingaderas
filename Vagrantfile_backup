@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  
+  config.vm.box = "quantal64"  
+  config.vm.network :hostonly, "10.10.10.10"  
+
+  config.vm.define :jenkins do |jenkins|
+   jenkins.vm.box = "quantal64"
+   #jenkins.vm.customize ["modifyvm", :id, "--memory", 2048, "--cpus", 4]
+   jenkins.vm.network :hostonly, "11.11.11.11"
+   jenkins.vm.provision :puppet do |puppet|
+   puppet.manifests_path = "Puppet/manifests"
+   puppet.module_path = "Puppet/modules"
+   puppet.manifest_file = "jenkins.pp"
+  end
+  
+end
+end
