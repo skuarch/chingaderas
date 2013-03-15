@@ -22,6 +22,8 @@
         <property name="c3p0.min_size">10</property> 
         <property name="c3p0.timeout">100</property> --> 
 
+        <!-- other driver to mysql -->
+         <property name="connection.driver_class">org.gjt.mm.mysql.Driver</property>   
 
         <!--
         <property name="connection.driver.class">com.mysql.jdbc.Driver</property>
