@@ -1,0 +1,3 @@
+
+./asadmin create-jms-resource --restype javax.jms.TopicConnectionFactory jms_topic_connection_factory
+./asadmin create-jms-resource --restype javax.jms.Queue jndi_jms_topic
