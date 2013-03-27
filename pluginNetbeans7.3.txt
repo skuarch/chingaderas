@@ -1,0 +1,3 @@
+install this from plugins>>settings tab
+
+http://deadlock.netbeans.org/hudson/job/nbms-and-javadoc/lastStableBuild/artifact/nbbuild/nbms/updates.xml
