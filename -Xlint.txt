@@ -1,0 +1,3 @@
+java compiler options
+
+-Xlint:unchecked -Xlint:deprecation -Xlint:path -Xlint:serial -Xlint:finally
