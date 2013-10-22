@@ -1,0 +1,5 @@
+curl -i -H "Accept: application/json" -H "X-HTTP-Method-Override: PUT" -X POST -d "from:mocos" http://192.168.208.151/sendMail.php
+curl -i -H "Accept: application/json" -X POST -d "from=skaurchman" http://192.168.208.151/notificacionesRest/sendMail.php
+curl -i -H "Accept: application/json" -X POST -d "{"moocs":"mocos"}" http://192.168.208.9:8080/sam5Restful/resources/jumper/link
+curl -H "Accept: application/json" -H "X-HTTP-Method-Override: PUT" -X POST -d "from:mocos" http://192.168.208.9:8080/sam5Restful/resources/jumper/link
+curl -X POST -H "Content-Type: application/json" -d '{"username":"xyz","password":"xyz"}' http://192.168.208.9:8080/sam5Restful/resources/jumper/link
