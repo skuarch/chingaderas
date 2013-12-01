@@ -1,0 +1,29 @@
+#reset dns
+sudo /etc/init.d/dns-clean start
+sudo killall -HUP dnsmasq
+
+#open port iptables
+iptables -A OUTPUT -p udp -o eth0 --dport 53 --sport 1024:65535 \-j ACCEPT
+iptables -A INPUT -p udp -i eth0 --sport 53 --dport 1024:65535 \-j ACCEPT
+
+
+cloaking
+webscraping
+
+
+$ttl 38400
+radio-mex.com.    IN    SOA    ns1.radio-mex.com. webmaster.radio-mex.com. (
+            1055026205
+            6H
+            1H
+            5D
+            20M )
+;
+radio-mex.com.        IN    A     31.171.249.93.
+mysql.radio-mex.com.  IN    A     31.171.249.93.
+www.radio-mex.com.    IN    CNAME radio-mex.com.
+ns1.radio-mex.com.    IN    A     31.171.249.93.
+ns2.radio-mex.com.    IN    A     31.171.249.93.
+radio-mex.com.        IN    NS    ns1.radio-mex.com.
+radio-mex.com.        IN    NS    ns2.radio-mex.com.
+mail.radio-mex.com.   IN    MX    1 radio-mex.com
