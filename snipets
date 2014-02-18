@@ -27,3 +27,92 @@ ns2.radio-mex.com.    IN    A     31.171.249.93.
 radio-mex.com.        IN    NS    ns1.radio-mex.com.
 radio-mex.com.        IN    NS    ns2.radio-mex.com.
 mail.radio-mex.com.   IN    MX    1 radio-mex.com
+
+
+//============================================================================
+::: simplePing ::: webservice
+{
+"request":"simplePing", 
+"timeout":"3000", 
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"expectedReturn":"true",
+"host":"skuarchy.com"
+} 
+
+//============================================================================
+::: Connectivity ::: webservice
+{
+"request":"connectivity", 
+"timeout":"1000", 
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"expectedReturn":"true"
+}
+
+//============================================================================
+::: GetConfiguration ::: webservice
+{
+"request":"getConfiguration", 
+"timeout":"1000", 
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"expectedReturn":true
+}
+
+//============================================================================
+::: EditConfiguration :::
+{
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"request":"editConfiguration",
+"application.name":"test", 
+"listen.port":"8084", 
+"socket.timeout":"30000", 
+"default.notifier.ip":"192.168.208.9", 
+"default.notifier.port":"8080", 
+"default.notifier.uri":"/sam5/webservices/v1/notifier",
+"timeout":"30000",
+"expectedReturn":true
+}
+
+//============================================================================
+::: AddNotifier :::
+{
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"request":"addNotifier",
+"timeout":"30000",
+"expectedReturn":"true",
+"url":"http://192.168.208.9:8080/sam5/notifications",
+"notifierName":"sam5"
+}
+
+
+//============================================================================
+::: createScheduler ::: webservice
+{
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"request":"createScheduler",
+"timeout":"30000",
+"expectedReturn":"true",
+"schedulerName":"one",
+"schedulerPeriod":"3",
+"schedulerStatus":"true"
+}
+
+
+//============================================================================
+::: createNetworkNode ::: webservice
+{
+"hostDestination":"192.168.208.15",
+"portDestination":"8084",
+"request":"createNetworkNode",
+"timeout":"30000",
+"expectedReturn":"true",
+"networkNodeHost":"192.168.208.92",
+"networkNodeTimeout":"1",
+"triggerAlarm":"5",
+"schedulerName":"one"
+}
