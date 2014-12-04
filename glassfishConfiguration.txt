@@ -1,0 +1,7 @@
+-XX:+DisableExplicitGC
+-XX:ParallelGCThreads=N N = cores
+-XX:+UseCompressedOops
+-Dcom.sun.grizzly.http.asyncwrite.enabled=true
+-Dcom.sun.grizzly.autoConfigure=true
+-Dcom.sun.grizzly.useDirectByteBuffer=true
+-server
