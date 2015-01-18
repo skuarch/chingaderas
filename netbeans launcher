@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=kdesudo -u root /home/skuarch/applications/netbeans-8.0.2/bin/runNetbeans.sh
+GenericName[en_US]=
+GenericName=
+Icon=exec
+MimeType=
+Name[en_US]=NetBeans IDE 8.0.2
+Name=NetBeans IDE 8.0.2
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
