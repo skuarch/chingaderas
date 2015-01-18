@@ -17,3 +17,8 @@ X-DBUS-ServiceName=
 X-DBUS-StartupType=
 X-KDE-SubstituteUID=false
 X-KDE-Username=
+
+
+#========================================================================================
+#!/bin/sh
+sudo nice -n -20 /home/skuarch/applications/netbeans-8.0.2/bin/./netbeans
