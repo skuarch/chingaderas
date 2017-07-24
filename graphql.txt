@@ -1,0 +1,8 @@
+#install dependencies
+
+npm install express express-graphql 
+npm install --save-dev babel-cli babel-preset-es2015 babel-preset-stage-2 nodemon
+
+#create an start script 
+"start": "nodemon index.jd --exec babel-node --presets es2015, statge-2"
+
