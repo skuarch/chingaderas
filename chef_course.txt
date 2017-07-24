@@ -1,0 +1,84 @@
+#install something 
+
+#sudo chef-client --local-mode moo.rb
+
+package 'cowsay' do
+    action :install
+end
+
+#create recipe
+-------------------------------------
+
+package 'httpd' do
+  action :install
+end
+
+file '/var/www/html/index.html' do
+  content '<h1>Hello, world!</h1>'
+  action :create
+end
+
+service 'httpd' do
+  action [:start, :enable]
+end
+
+-------------------------------------
+# runs mutiple recipes
+
+sudo chef-client --local-mode -r "recipe[apache::server],recipe[workstation::setup]"
+
+
+# knife
+-------------------------------------
+
+1665  knife --hellp
+ 1666  knife --help
+ 1667  clear
+ 1668  knife --help
+ 1669  clear
+ 1670  knife client --help
+ 1671  clear
+ 1672  knife client
+ 1673  knife client --help
+ 1674  knife client list
+ 1675  clear
+ 1676  knife client list
+ 1677  clear
+ 1678  knife client list
+ 1679  clear
+ 1680  knife cookbook --help
+ 1681  knife cookbook list
+ 1682  clear
+ 1683  cd cookbooks/apache/
+ 1684  clear
+ 1685  chef -v
+ 1686  berks -v
+ 1687  clear
+ 1688  berks --help
+ 1689  berks lis
+ 1690  berks list
+ 1691  clear
+ 1692  berks install
+ 1693  berks list
+ 1694  ls -al 
+ 1695  cat Berksfile.lock 
+ 1696  clear
+ 1697  tree 
+ 1698  clear
+ 1699  berks upload
+ 1700  knife cookbook list
+ 1701  clear
+ 1702  ls
+ 1703  tree
+ 1704  cd ..
+ 1705  ls
+ 1706  cd workstation/
+ 1707  clear
+ 1708  berks upload workstation
+ 1709  berks install
+ 1710  berks upload workstation
+ 1711  berks cookbooks list
+ 1712  knife cookbook list
+ 1713  lcear
+
+
